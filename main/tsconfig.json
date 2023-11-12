@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true, // Recomendado habilitar para segurança de tipos
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": true, // Recomendado habilitar
+    "noFallthroughCasesInSwitch": true // Recomendado habilitar
+  },
+  "include": [
+    "src/**/*.ts" // Adicionando padrão de inclusão para seus arquivos TypeScript
+  ],
+  "exclude": [
+    "node_modules", // Excluindo a pasta node_modules dos arquivos TypeScript a serem compilados
+    "dist" // Excluindo a pasta dist, onde os arquivos compilados serão armazenados
+  ]
+}
